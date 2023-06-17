@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+body {
+  width: 100%;
+  background: black;
+  color: white;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  border-radius: 12px;
+  background-image: linear-gradient(45deg, #0f766e, #18e0b5);
+  width: 90%;
+  border: 2px solid white;
+  max-width: 500px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.title {
+  font-size: 30px;
+  text-shadow: 0 0px 20px rgb(2, 53, 51);
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+#otp-form {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#otp-form input {
+  border: none;
+  background-color: #171d20;
+  box-shadow:0 10px 15px rgb(2, 53, 51) ;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  outline: 2px solid rgb(66, 66, 66);
+}
+                                                                    #otp-form input:focus-visible {
+                                                                      outline: 2px solid royalblue;
+                                                                    }
+                                                                    #otp-form input.filled {
+                                                                      outline: 2px solid rgb(7, 192, 99);
+                                                                    }
+
+
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0px;
+  font-size: 1rem;
+  margin-bottom: -10px;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  margin-top: 40px;
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  z-index: 1;
+}
+                                                                  .button:after {
+                                                                    content: "";
+                                                                    position: absolute;
+                                                                    bottom: 0;
+                                                                    left: 0;
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    background-color: 
+                                                                    #0cf;
+                                                                    border-radius: 10rem;
+                                                                    z-index: -2;
+                                                                  }
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
